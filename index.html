@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe5f0">
+  <title>Un regalito para ti ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="corazones" aria-hidden="true"></div>
+
+  <header class="top">
+    <span>୨୧ little birthday website ୨୧</span>
+    <span>♡ made with love ♡</span>
+  </header>
+
+  <main>
+    <!-- PANTALLA DE INICIO -->
+    <section class="pantalla hero">
+      <div class="sticker">🎀 ✨ ☁️</div>
+      <p class="mini">un regalito hecho especialmente para ti</p>
+      <h1>¡Feliz cumpleaños!</h1>
+      <h2 id="nombrePortada">Mi personita favorita ♡</h2>
+
+      <div class="mascotas">
+        <span>🐶</span><span>🐒</span><span>🐰</span>
+      </div>
+
+      <p class="texto">
+        Hoy es un día especial porque el mundo celebra
+        que existes. ¡Espero sacarte una sonrisa!
+      </p>
+
+      <button id="abrir" class="boton">
+        Abre tu regalito 🎁
+      </button>
+      <p class="mini">desliza y descubre tu sorpresa ♡</p>
+    </section>
+
+    <!-- MENSAJE DE AMISTAD -->
+    <section class="pantalla">
+      <span class="etiqueta">01 · nuestra amistad</span>
+      <h2>Un pequeño mundo para ti 💗</h2>
+      <p>
+        Si pudiera regalarte algo, sería la oportunidad
+        de verte feliz todos los días y recordarte lo
+        increíble que eres.
+      </p>
+
+      <div class="tarjetas">
+        <article class="tarjeta rosa">
+          <span class="emoji">🌷</span>
+          <h3>Gracias por existir</h3>
+          <p>Tu amistad es uno de esos regalos que la vida da.</p>
+        </article>
+
+        <article class="tarjeta lila">
+          <span class="emoji">🧸</span>
+          <h3>Momentos bonitos</h3>
+          <p>Que nunca nos falten las risas y las locuras.</p>
+        </article>
+
+        <article class="tarjeta azul">
+          <span class="emoji">⭐</span>
+          <h3>Siempre brilla</h3>
+          <p>Nunca olvides lo especial que eres.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RINCÓN ENHYPEN -->
+    <section class="pantalla enhypen">
+      <span class="etiqueta">02 · your k-pop corner</span>
+      <h2>ENHYPEN ♡</h2>
+      <div class="decoracion">🌙 💿 🦇 ⭐</div>
+      <p>
+        Que tu nuevo año esté lleno de canciones favoritas,
+        momentos inolvidables y muchas razones para sonreír.
+      </p>
+
+      <div class="caja-musica">
+        <span>🎧</span>
+        <div>
+          <strong>Polaroid Love</strong>
+          <p>Un pequeño soundtrack para tu día ♡</p>
+        </div>
+      </div>
+
+      <p class="mini">
+        Espero que disfrutes de este rinconcito k-pop y que cada canción te recuerde lo especial que eres. ¡Feliz cumpleaños! 🎶
+      </p>
+    </section>
+
+<section class="jon-section">
+    <h2>♡ Her Favorite Actor ♡</h2>
+
+    <h3>Jon Bernthal 🎬</h3>
+
+    <p>
+        Porque todos tenemos ese actor que nos encanta.
+        💗 ¡Esta sección es especialmente para ti!
+    </p>
+
+    <div class="jon-gallery">
+        <img src="images/jon.jpg" alt="Jon Bernthal">
+        <img src="images/jonn.jpg" alt="Jon Bernthal">
+    </div>
+
+    <button onclick="mostrarMensajeJon()">
+        Click para una sorpresa 💌
+    </button>
+
+    <p id="mensaje-jon" class="mensaje-jon"></p>
+</section>
+
+    <!-- RECUERDOS Y FOTOS -->
+    <section class="pantalla">
+      <span class="etiqueta">03 · little memories</span>
+      <h2>Nuestros recuerdos 📸</h2>
+      <p>Los momentos pequeños también se convierten en grandes recuerdos.</p>
+
+      <div class="fotos">
+        <figure>
+          <img src="images/ani.jpeg"
+               alt="Un recuerdo especial"
+               onerror="this.style.display='none'">
+          <figcaption>Un momento bonito ♡</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/nita.jpeg"
+               alt="Otro recuerdo de amistad"
+               onerror="this.style.display='none'">
+          <figcaption>Una de muchos momentos ✨</figcaption>
+        </figure>
+      </div>
+
+      <p class="mini">
+        love uuuu wapa kawaii ♡
+      </p>
+    </section>
+
+    <!-- RINCÓN KAWAII -->
+    <section class="pantalla">
+      <span class="etiqueta">04 · cute little corner</span>
+      <h2>Un abrazo virtual 🐾</h2>
+
+      <div class="mascotas grandes">
+        <span>🐶</span>
+        <span>🐵</span>
+        <span>🐻</span>
+        <span>🐰</span>
+      </div>
+
+      <div class="nota">
+        <p>
+          Este rinconcito es para recordarte que mereces
+          muchísimo cariño, cosas bonitas y días felices.
+        </p>
+      </div>
+
+      <button id="sorpresa" class="boton secundario">
+        Toca para recibir un abrazo 💌
+      </button>
+      <p id="mensajeSorpresa" class="resultado"></p>
+    </section>
+
+    <!-- CARTA FINAL -->
+    <section class="pantalla carta">
+      <span class="etiqueta">05 · una cartita para ti</span>
+      <h2>Querida anita... 💌</h2>
+
+      <div class="papel">
+        <p id="cartaTexto">
+          Hoy quiero desearte un cumpleaños lleno de
+          alegría, amor y momentos que te hagan sonreír.
+          Gracias por tu amistad, por las risas y por
+          todos esos pequeños momentos que hacen
+          especial nuestra historia.
+
+          Espero que este nuevo año te traiga nuevas
+          aventuras, sueños cumplidos y muchísimas
+          cosas bonitas. Nunca dejes de ser tú.
+
+          Feliz cumpleaños, kaki. Te quiero muchiii. ♡
+        </p>
+      </div>
+
+      <button id="final" class="boton">
+        Enviar un montón de amor 💗
+      </button>
+
+      <p id="finalMensaje" class="resultado"></p>
+      <p class="firma">hecho con mucho cariño ♡</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>♡ made for you, with love ♡</p>
+    <p>Un pequeño universo creado para celebrar tu vida ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
